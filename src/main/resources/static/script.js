@@ -41,6 +41,10 @@ function displayNotes(notes) {
             <div class="note">
                 <h3>${note.title}</h3>
                 <p>${note.body}</p>
+
+                <button onclick="deleteNote(${note.id})">
+                    Delete
+                </button>
             </div>
         `;
     });
@@ -62,6 +66,15 @@ async function searchNotes() {
     const notes = await response.json();
 
     displayNotes(notes);
+}
+
+async function deleteNote(id) {
+
+    await fetch(`${API}/${id}`, {
+        method: "DELETE"
+    });
+
+    loadNotes();
 }
 
 loadNotes();
