@@ -20,7 +20,7 @@ Simple Notes App using Java Spring Boot.
 
 ## Run Project
 
-Open in IntelliJ and run:
+Open in IntelliJ or vscode and run:
 
 NotesAppApplication.java
 
