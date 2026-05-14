@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Notes App</h1>
+
+    <input type="text" id="title" placeholder="Title">
+
+    <textarea id="body" placeholder="Write note"></textarea>
+
+    <button onclick="addNote()">Add Note</button>
+
+    <input
+            type="text"
+            id="search"
+            placeholder="Search notes..."
+            onkeyup="searchNotes()"
+    >
+
+    <div id="notes"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
